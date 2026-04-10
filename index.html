@@ -3,38 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vikash Tutoring Services |Best Home Tutors in Kanpur</title>
+
+<title>Vikas Tutoring Services | Best Home Tutors in Kanpur</title>
+
 <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-    --primary: #1e3a8a;
-    --secondary: #f97316;
-    --text-dark: #1f2937;
-    --text-light: #6b7280;
-    --bg-light: #f3f4f6;
+    --primary:#1e3a8a;
+    --secondary:#f97316;
+    --text:#1f2937;
+    --light:#6b7280;
+    --bg:#f8fafc;
 }
 
-* { margin:0; padding:0; box-sizing:border-box; }
+* {margin:0;padding:0;box-sizing:border-box;}
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-dark);
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    background:white;
 }
 
-/* NAVBAR */
+/* NAVBAR /
 nav {
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:1rem 5%;
-    background:#fff;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
 }
 
 .logo {
-    font-size:1.5rem;
+    font-size:1.4rem;
     font-weight:700;
     color:var(--primary);
 }
@@ -47,14 +52,19 @@ nav {
 
 .nav-links a {
     text-decoration:none;
-    color:var(--text-dark);
+    color:var(--text);
+    font-weight:500;
 }
 
-/* HERO */
+.nav-links a:hover {
+    color:var(--secondary);
+}
+
+/ HERO /
 .hero {
     padding:100px 5%;
     text-align:center;
-    background:linear-gradient(135deg,#f0f7ff,#ffffff);
+    background:linear-gradient(135deg,#eef5ff,#ffffff);
 }
 
 .hero h1 {
@@ -64,22 +74,34 @@ nav {
 }
 
 .hero p {
-    font-size:1.2rem;
-    color:var(--text-light);
+    max-width:650px;
+    margin:auto;
+    color:var(--light);
     margin-bottom:2rem;
 }
 
+.cta {
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    flex-wrap:wrap;
+}
+
 .btn {
-    padding:12px 25px;
+    padding:0.9rem 2rem;
     border-radius:8px;
-    text-decoration:none;
     font-weight:600;
-    margin:5px;
+    text-decoration:none;
+    transition:0.3s;
 }
 
 .btn-primary {
     background:var(--secondary);
-    color:#fff;
+    color:white;
+}
+
+.btn-primary:hover {
+    transform:translateY(-3px);
 }
 
 .btn-outline {
@@ -87,41 +109,51 @@ nav {
     color:var(--secondary);
 }
 
-/* SECTION */
+.btn-outline:hover {
+    background:var(--secondary);
+    color:white;
+}
+
+/ SECTIONS /
 .section {
     padding:70px 5%;
     text-align:center;
 }
 
+.section h2 {
+    font-size:2rem;
+    margin-bottom:2rem;
+}
+
+/ CARDS /
 .grid {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    gap:1.5rem;
 }
 
 .card {
-    padding:20px;
-    background:#f3f4f6;
-    border-radius:10px;
+    background:var(--bg);
+    padding:2rem;
+    border-radius:12px;
+    transition:0.3s;
 }
 
-/* FOOTER */
+.card:hover {
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
+
+/ FOOTER */
 footer {
     background:var(--primary);
-    color:#fff;
-    padding:40px 5%;
-}
-
-.footer-content {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-}
-
-.footer-bottom {
-    margin-top:20px;
+    color:white;
+    padding:50px 5%;
     text-align:center;
 }
+
+footer p {margin:5px 0;}
+
 </style>
 </head>
 
@@ -129,65 +161,90 @@ footer {
 
 <!-- NAVBAR -->
 <nav>
-    <div class="logo">Vikash Tutoring Services</div>
+<div class="logo">Vikas Tutoring Services 🚀</div>
+
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-    <h1>Best Home Tutors in Kanpur</h1>
-    <p>Personalized learning with expert teachers. Helping students excel in academics and competitive exams.</p>
+<section class="hero" id="home">
+<h1>Best Home Tutors in Kanpur</h1>
 
-    <a href="tel:9582117785" class="btn btn-primary">📞 Call Now</a>
-    <a href="https://wa.me/919582117785" class="btn btn-outline">💬 WhatsApp</a>
+<p>
+Personalized learning with expert teachers. Helping students excel in academics and competitive exams.
+</p>
+
+<div class="cta">
+
+<a href="https://wa.me/919582117785?text=Hi%20I%20am%20looking%20for%20a%20home%20tutor%20in%20Kanpur"
+target="_blank" class="btn btn-primary">
+Find a Tutor
+</a>
+
+<a href="https://wa.me/919582117785?text=Hi%20I%20want%20to%20join%20as%20a%20teacher"
+target="_blank" class="btn btn-outline">
+Join as a Teacher
+</a>
+
+</div>
 </section>
 
 <!-- SERVICES -->
-<section class="section">
-    <h2>Our Courses</h2>
+<section class="section" id="services">
+<h2>Our Tutoring Programs</h2>
 
-    <div class="grid">
-        <div class="card">
-            <h3>Primary Classes</h3>
-            <p>Strong foundation for Class 1 to Class 5.</p>
-        </div>
+<div class="grid">
 
-        <div class="card">
-            <h3>Class 6–10</h3>
-            <p>Board preparation (CBSE / ICSE / ISC / IGCSE / Cambridge).</p>
-        </div>
+<div class="card">
+<h3>Primary Classes</h3>
+<p>Class 1 to Class 5 strong foundation.</p>
+</div>
 
-        <div class="card">
-            <h3>Class 11–12</h3>
-            <p>Science & Commerce expert guidance.</p>
-        </div>
+<div class="card">
+<h3>Class 6–10</h3>
+<p>Board preparation (CBSE / ICSE / ISC / Cambridge / IGCSE).</p>
+</div>
 
-        <div class="card">
-            <h3>Competitive Exams</h3>
-            <p>JEE, NEET & UPSC.</p>
-        </div>
-    </div>
+<div class="card">
+<h3>Class 11–12</h3>
+<p>Science & Commerce expert guidance.</p>
+</div>
+
+<div class="card">
+<h3>Competitive Exams</h3>
+<p>JEE, NEET, UPSC.</p>
+</div>
+
+</div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-    <div class="footer-content">
-        <div>
-            <h3>Vikash Sir Academy</h3>
-            <p>Trusted home tutoring service in Kanpur.</p>
-        </div>
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2>About Us</h2>
 
-        <div>
-            <h4>Contact</h4>
-            <p>📞 9582117785</p>
-            <p>📧 priyapro28@gmail.com</p>
-            <p>📍 Swaroop Nagar, Kanpur</p>
-        </div>
-    </div>
+<p style="max-width:700px;margin:auto;color:#6b7280;">
+Vikas Tutoring Services provides trusted and experienced home tutors across Kanpur.
+We connect students with qualified teachers for personalized learning and better results.
+</p>
 
-    <div class="footer-bottom">
-        © 2026 Vikash Sir Academy
-    </div>
+</section>
+
+<!-- CONTACT -->
+<footer id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📞 9582117785</p>
+<p>📧 priyapro28@gmail.com</p>
+<p>📍 Swaroop Nagar, Kanpur</p>
+
 </footer>
 
 </body>
 </html>
+
