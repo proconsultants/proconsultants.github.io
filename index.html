@@ -1,146 +1,192 @@
-[1:19 pm, 10/04/2026] P: <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Vikash Sir Academy</title>
-    <style>
-        body {
-            font-family: Arial;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .box {
-            background: white;
-            padding: 20px;
-            margin: 40px auto;
-            width: 60%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px gray;
-        }
-    </style>
-</head>
-
-<body>
-
-<div class="box">
-    <h1>Vikash Sir Academy</h1>
-    <p>Expert Coaching for Students</p>
-
-    <h3>Subjects Offered:</h3>
-    <p>Maths | Science | Competitive Exams</p>
-
-    <h3>Contact:</h3>
-    <p>📞 9582117785</p>
-    <p>📍 Kanpur</p>
-</div>
-
-</body>
-</html>
-[1:37 pm, 10/04/2026] P: <h1>Vikash Sir Academy 🚀</h1>
-[2:09 pm, 10/04/2026] P: <!DOCTYPE html>
-<html>
-<head>
-<title>Vikash Sir Academy</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikash Sir Academy | Home Tutors in Kanpur</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {margin:0;font-family:Arial;background:#f5f7fa;}
+:root {
+    --primary: #1e3a8a;
+    --secondary: #f97316;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f3f4f6;
+}
 
-header {background:#1e3a8a;color:white;text-align:center;padding:20px;}
+* { margin:0; padding:0; box-sizing:border-box; }
 
-nav {background:#2563eb;text-align:center;padding:10px;}
-nav a {color:white;margin:10px;text-decoration:none;font-weight:bold;}
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+}
 
+/* NAVBAR */
+nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 5%;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size:1.5rem;
+    font-weight:700;
+    color:var(--primary);
+}
+
+.nav-links {
+    list-style:none;
+    display:flex;
+    gap:2rem;
+}
+
+.nav-links a {
+    text-decoration:none;
+    color:var(--text-dark);
+}
+
+/* HERO */
 .hero {
-    background: linear-gradient(to right, #2563eb, #1e3a8a);
-    color:white;
+    padding:100px 5%;
     text-align:center;
-    padding:60px 20px;
+    background:linear-gradient(135deg,#f0f7ff,#ffffff);
 }
 
-.hero h1 {font-size:40px;}
-
-.section {padding:40px 20px;text-align:center;}
-
-.cards {display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
-
-.card {
-    background:white;
-    padding:20px;
-    width:250px;
-    border-radius:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.hero h1 {
+    font-size:3rem;
+    color:var(--primary);
+    margin-bottom:1rem;
 }
 
-.whatsapp {
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 20px;
-    background:#25D366;
-    color:white;
+.hero p {
+    font-size:1.2rem;
+    color:var(--text-light);
+    margin-bottom:2rem;
+}
+
+.btn {
+    padding:12px 25px;
     border-radius:8px;
     text-decoration:none;
-    font-weight:bold;
+    font-weight:600;
+    margin:5px;
 }
 
-footer {background:#1e3a8a;color:white;text-align:center;padding:15px;}
+.btn-primary {
+    background:var(--secondary);
+    color:#fff;
+}
+
+.btn-outline {
+    border:2px solid var(--secondary);
+    color:var(--secondary);
+}
+
+/* SECTION */
+.section {
+    padding:70px 5%;
+    text-align:center;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card {
+    padding:20px;
+    background:#f3f4f6;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer {
+    background:var(--primary);
+    color:#fff;
+    padding:40px 5%;
+}
+
+.footer-content {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.footer-bottom {
+    margin-top:20px;
+    text-align:center;
+}
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Vikash Sir Academy 🚀</h1>
-<p>Building Strong Foundations for Bright Futures</p>
-</header>
-
+<!-- NAVBAR -->
 <nav>
-<a href="#">Home</a>
-<a href="#courses">Courses</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
+    <div class="logo">Vikash Sir Academy 🚀</div>
 </nav>
 
-<div class="hero">
-<h1>Expert Coaching for Students</h1>
-<p>School Tuition | Competitive Exams | Personal Guidance</p>
-<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX">📲 Enroll on WhatsApp</a>
-</div>
+<!-- HERO -->
+<section class="hero">
+    <h1>Best Home Tutors in Kanpur</h1>
+    <p>Personalized learning with expert teachers. Helping students excel in academics and competitive exams.</p>
 
-<div class="section" id="courses">
-<h2>Our Courses</h2>
-<div class="cards">
-<div class="card">
-<h3>Class 6–12</h3>
-<p>Maths, Science, Foundation Building</p>
-</div>
-<div class="card">
-<h3>Class 11–12</h3>
-<p>Physics, Chemistry, Maths</p>
-</div>
-<div class="card">
-<h3>Competitive Exams</h3>
-<p>UPSC, State PCS, Other Exams</p>
-</div>
-</div>
-</div>
+    <a href="tel:9582117785" class="btn btn-primary">📞 Call Now</a>
+    <a href="https://wa.me/919582117785" class="btn btn-outline">💬 WhatsApp</a>
+</section>
 
-<div class="section" id="about">
-<h2>About Vikash Sir</h2>
-<p>Experienced educator dedicated to helping students achieve academic excellence with personalized teaching methods.</p>
-</div>
+<!-- SERVICES -->
+<section class="section">
+    <h2>Our Courses</h2>
 
-<div class="section" id="contact">
-<h2>Contact Us</h2>
-<p>📞 9582117785</p>
-<p>📍 Kanpur</p>
-<a class="whatsapp" href="https://wa.me/919582117785">Chat on WhatsApp</a>
-</div>
+    <div class="grid">
+        <div class="card">
+            <h3>Primary Classes</h3>
+            <p>Strong foundation for Nursery to Class 5.</p>
+        </div>
 
+        <div class="card">
+            <h3>Class 6–10</h3>
+            <p>Board preparation (CBSE / ICSE / UP Board).</p>
+        </div>
+
+        <div class="card">
+            <h3>Class 11–12</h3>
+            <p>Science & Commerce expert guidance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Competitive Exams</h3>
+            <p>JEE, NEET & Olympiad preparation.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Vikash Sir Academy</p>
+    <div class="footer-content">
+        <div>
+            <h3>Vikash Sir Academy</h3>
+            <p>Trusted home tutoring service in Kanpur.</p>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>📞 9582117785</p>
+            <p>📧 priyapro28@gmail.com</p>
+            <p>📍 Swaroop Nagar, Kanpur</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Vikash Sir Academy
+    </div>
 </footer>
 
 </body>
