@@ -6,24 +6,14 @@
 
 <title>Vikas Tutoring Services | Best Home Tutors in Kanpur</title>
 
-<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root {
-    --primary:#1e3a8a;
-    --secondary:#f97316;
-    --text:#1f2937;
-    --light:#6b7280;
-    --bg:#f8fafc;
-}
-
 * {margin:0;padding:0;box-sizing:border-box;}
 
 body {
     font-family:'Inter',sans-serif;
-    color:var(--text);
-    background:white;
+    color:#1f2937;
 }
 
 /* NAVBAR /
@@ -31,140 +21,106 @@ nav {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:1rem 5%;
+    padding:15px 5%;
     background:white;
     box-shadow:0 2px 10px rgba(0,0,0,0.05);
-    position:sticky;
-    top:0;
 }
 
 .logo {
-    font-size:1.4rem;
     font-weight:700;
-    color:var(--primary);
+    color:#1e3a8a;
 }
 
 .nav-links {
     list-style:none;
     display:flex;
-    gap:2rem;
+    gap:25px;
 }
 
 .nav-links a {
     text-decoration:none;
-    color:var(--text);
-    font-weight:500;
-}
-
-.nav-links a:hover {
-    color:var(--secondary);
+    color:#1f2937;
 }
 
 / HERO /
 .hero {
-    padding:100px 5%;
     text-align:center;
+    padding:100px 20px;
     background:linear-gradient(135deg,#eef5ff,#ffffff);
 }
 
 .hero h1 {
-    font-size:3rem;
-    color:var(--primary);
-    margin-bottom:1rem;
+    font-size:42px;
+    color:#1e3a8a;
+    margin-bottom:15px;
 }
 
 .hero p {
-    max-width:650px;
+    max-width:600px;
     margin:auto;
-    color:var(--light);
-    margin-bottom:2rem;
+    color:#6b7280;
+    margin-bottom:25px;
 }
 
-.cta {
+.buttons {
     display:flex;
     justify-content:center;
-    gap:1rem;
-    flex-wrap:wrap;
+    gap:15px;
 }
 
 .btn {
-    padding:0.9rem 2rem;
+    padding:12px 25px;
     border-radius:8px;
     font-weight:600;
     text-decoration:none;
-    transition:0.3s;
 }
 
-.btn-primary {
-    background:var(--secondary);
+.primary {
+    background:#f97316;
     color:white;
 }
 
-.btn-primary:hover {
-    transform:translateY(-3px);
+.outline {
+    border:2px solid #f97316;
+    color:#f97316;
 }
 
-.btn-outline {
-    border:2px solid var(--secondary);
-    color:var(--secondary);
-}
-
-.btn-outline:hover {
-    background:var(--secondary);
-    color:white;
-}
-
-/ SECTIONS /
+/ SECTION /
 .section {
     padding:70px 5%;
     text-align:center;
 }
 
-.section h2 {
-    font-size:2rem;
-    margin-bottom:2rem;
-}
-
-/ CARDS /
 .grid {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:1.5rem;
+    gap:20px;
 }
 
 .card {
-    background:var(--bg);
-    padding:2rem;
-    border-radius:12px;
-    transition:0.3s;
-}
-
-.card:hover {
-    transform:translateY(-8px);
-    box-shadow:0 10px 20px rgba(0,0,0,0.05);
+    padding:25px;
+    background:#f3f4f6;
+    border-radius:10px;
 }
 
 / FOOTER */
 footer {
-    background:var(--primary);
+    background:#1e3a8a;
     color:white;
-    padding:50px 5%;
     text-align:center;
+    padding:40px;
 }
-
-footer p {margin:5px 0;}
-
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <nav>
 <div class="logo">Vikas Tutoring Services 🚀</div>
 
 <ul class="nav-links">
-<li><a href="#home">Home</a></li>
+<li><a href="#">Home</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#about">About Us</a></li>
 <li><a href="#contact">Contact</a></li>
@@ -172,22 +128,22 @@ footer p {margin:5px 0;}
 </nav>
 
 <!-- HERO -->
-<section class="hero" id="home">
+<section class="hero">
 <h1>Best Home Tutors in Kanpur</h1>
 
 <p>
 Personalized learning with expert teachers. Helping students excel in academics and competitive exams.
 </p>
 
-<div class="cta">
+<div class="buttons">
 
-<a href="https://wa.me/919582117785?text=Hi%20I%20am%20looking%20for%20a%20home%20tutor%20in%20Kanpur"
-target="_blank" class="btn btn-primary">
+<a href="https://wa.me/919582117785?text=Hi%20I%20need%20a%20home%20tutor"
+target="_blank" class="btn primary">
 Find a Tutor
 </a>
 
 <a href="https://wa.me/919582117785?text=Hi%20I%20want%20to%20join%20as%20a%20teacher"
-target="_blank" class="btn btn-outline">
+target="_blank" class="btn outline">
 Join as a Teacher
 </a>
 
@@ -202,12 +158,12 @@ Join as a Teacher
 
 <div class="card">
 <h3>Primary Classes</h3>
-<p>Class 1 to Class 5 strong foundation.</p>
+<p>Nursery to Class 5 strong foundation.</p>
 </div>
 
 <div class="card">
 <h3>Class 6–10</h3>
-<p>Board preparation (CBSE / ICSE / ISC / Cambridge / IGCSE).</p>
+<p>Board preparation (CBSE / ICSE / UP Board).</p>
 </div>
 
 <div class="card">
@@ -227,18 +183,15 @@ Join as a Teacher
 <section class="section" id="about">
 <h2>About Us</h2>
 
-<p style="max-width:700px;margin:auto;color:#6b7280;">
-Vikas Tutoring Services provides trusted and experienced home tutors across Kanpur.
-We connect students with qualified teachers for personalized learning and better results.
+<p style="max-width:600px;margin:auto;color:#6b7280;">
+We provide trusted and experienced home tutors across Kanpur, helping students achieve academic success.
 </p>
-
 </section>
 
 <!-- CONTACT -->
 <footer id="contact">
 
 <h2>Contact Us</h2>
-
 <p>📞 9582117785</p>
 <p>📧 priyapro28@gmail.com</p>
 <p>📍 Swaroop Nagar, Kanpur</p>
@@ -247,4 +200,3 @@ We connect students with qualified teachers for personalized learning and better
 
 </body>
 </html>
-
