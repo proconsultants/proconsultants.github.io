@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vikas Tutoring Services</title>
+<title>Vikash Tutoring Services</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -29,6 +29,7 @@ nav {
     margin-left: 25px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 /* HERO */
@@ -38,30 +39,29 @@ nav {
     background: linear-gradient(to right, #f3f7ff, #ffffff);
 }
 .hero h1 {
-    font-size: 40px;
+    font-size: 36px;
     color: #1e3a8a;
 }
 .hero p {
     color: gray;
 }
 
+/* BUTTONS */
 .buttons {
     margin-top: 20px;
 }
-
 .btn {
     padding: 12px 25px;
     border-radius: 6px;
     text-decoration: none;
     margin: 10px;
     display: inline-block;
+    font-weight: 600;
 }
-
 .btn-primary {
     background: #f97316;
     color: white;
 }
-
 .btn-outline {
     border: 2px solid #f97316;
     color: #f97316;
@@ -72,13 +72,11 @@ nav {
     padding: 60px 5%;
     text-align: center;
 }
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     gap: 20px;
 }
-
 .card {
     background: #f3f4f6;
     padding: 20px;
@@ -94,47 +92,67 @@ footer {
 }
 </style>
 
+<script>
+function openPlaceholder(pageName) {
+    document.body.innerHTML = `
+        <div style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:Inter;">
+            <h1>🚧 ${pageName} Page Under Development</h1>
+        </div>
+    `;
+}
+</script>
+
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
-    <div class="logo">Vikas Tutoring Services 🚀</div>
+    <div class="logo">Vikash Tutoring Services</div>
     <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
+        <a onclick="location.reload()">Home</a>
+        <a onclick="openPlaceholder('Services')">Services</a>
+        <a onclick="openPlaceholder('About Us')">About Us</a>
+        <a onclick="openPlaceholder('Contact Us')">Contact</a>
     </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-    <h1>Best Home Tutors in Kanpur</h1>
+    <h1>Vikash Tutoring Services: Best Home Tuition in Kanpur</h1>
     <p>Personalized learning with expert teachers. Helping students excel in academics and competitive exams.</p>
 
     <div class="buttons">
-        <a href="https://wa.me/919582117785" class="btn btn-primary">Find a Tutor</a>
-        <a href="https://wa.me/919582117785" class="btn btn-outline">Join as a Teacher</a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/919582117785?text=Hi%20I%20am%20looking%20for%20a%20home%20tutor.%20Please%20assist." class="btn btn-primary">
+            Find a Teacher
+        </a>
+
+        <!-- Google Form -->
+        <a href="https://forms.gle/4YKjv9eiozs7BNXT6" class="btn btn-outline">
+            Join as a Teacher
+        </a>
     </div>
 </section>
 
+<!-- SERVICES -->
 <section class="section">
     <h2>Our Tutoring Programs</h2>
 
     <div class="grid">
         <div class="card">
             <h3>Primary Classes</h3>
-            <p>Nursery to Class 5 strong foundation</p>
+            <p>Class 1-5 </p>
         </div>
 
         <div class="card">
             <h3>Class 6–10</h3>
-            <p>CBSE / ICSE / UP Board</p>
+            <p>CBSE / ICSE / ISC / Cambridge / IGCSE</p>
         </div>
 
         <div class="card">
             <h3>Class 11–12</h3>
-            <p>Science & Commerce</p>
+            <p>Science & Commerce (All Boards)</p>
         </div>
 
         <div class="card">
@@ -144,11 +162,55 @@ footer {
     </div>
 </section>
 
+<!-- LOCATION SECTION -->
+<section class="section">
+    <h2>Home Tuition Available in Kanpur Areas</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Kakadeo</h3>
+            <p>Expert home tutors available in Kakadeo.</p>
+            <a href="https://wa.me/919582117785?text=Hi%20I%20need%20a%20home%20tutor%20in%20Kakadeo" class="btn btn-primary">Find Tutor</a>
+        </div>
+
+        <div class="card">
+            <h3>Kalyanpur</h3>
+            <p>Qualified teachers available in Kalyanpur.</p>
+            <a href="https://wa.me/919582117785?text=Hi%20I%20need%20a%20home%20tutor%20in%20Kalyanpur" class="btn btn-primary">Find Tutor</a>
+        </div>
+
+        <div class="card">
+            <h3>Rawatpur</h3>
+            <p>Best home tuition services in Rawatpur.</p>
+            <a href="https://wa.me/919582117785?text=Hi%20I%20need%20a%20home%20tutor%20in%20Rawatpur" class="btn btn-primary">Find Tutor</a>
+        </div>
+
+        <div class="card">
+            <h3>Govind Nagar</h3>
+            <p>Experienced tutors in Govind Nagar.</p>
+            <a href="https://wa.me/919582117785?text=Hi%20I%20need%20a%20home%20tutor%20in%20Govind%20Nagar" class="btn btn-primary">Find Tutor</a>
+        </div>
+
+        <div class="card">
+            <h3>Swaroop Nagar</h3>
+            <p>Top-rated tutors in Swaroop Nagar.</p>
+            <a href="https://wa.me/919582117785?text=Hi%20I%20need%20a%20home%20tutor%20in%20Swaroop%20Nagar" class="btn btn-primary">Find Tutor</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
     <h2>Contact Us</h2>
     <p>📞 9582117785</p>
     <p>📧 priyapro28@gmail.com</p>
     <p>📍 Swaroop Nagar, Kanpur</p>
+
+    <div class="buttons">
+        <a href="https://wa.me/919582117785?text=Hi%20I%20need%20a%20home%20tutor" class="btn btn-primary">
+            Find a Teacher
+        </a>
+    </div>
 </footer>
 
 </body>
